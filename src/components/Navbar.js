@@ -40,7 +40,7 @@ function Navbar() {
 
 
     return (
-        <nav className="bg-gray-900 p-4 flex justify-between items-center ">
+        <nav className="bg-gray-900 p-3 flex justify-between items-center sticky top-0">
             <div className="z-10">
                 <h1 className="logo text-white text-5xl">Ansh</h1>
             </div>
