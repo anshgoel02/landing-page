@@ -28,10 +28,11 @@ function Navbar() {
         )
     });
 
+    // For responsiveness
     const renderedMidNavLinks = links.map((link) => {
         return (
             <li key={link.id} className="px-4 py-4 text-white cursor-pointer text-4xl hover:bg-gray-900 hover:rounded-md hover:scale-105 duration-200">
-                <Link to={link.goto} smooth duration={500}>
+                <Link to={link.goto} smooth duration={500} onClick={handleClick} offset={-window.innerHeight / 10}>
                     {link.name}
                 </Link>
             </li>
@@ -41,8 +42,8 @@ function Navbar() {
 
     return (
         <nav className="bg-gray-900 p-3 flex justify-between items-center sticky top-0">
-            <div className="z-10">
-                <h1 className="logo text-white text-5xl">Ansh</h1>
+            <div className="z-10 cursor-pointer">
+                <Link to="home" smooth duration={500} className="logo text-white text-5xl">Ansh</Link>
             </div>
             <ul className="hidden md:flex">
                 {renderedLinks}
@@ -55,7 +56,7 @@ function Navbar() {
                 }
             </div>
             {
-                !isNavHidden && <ul className="flex flex-col justify-center items-center bg-gradient-to-b from-gray-900 to-black absolute w-full h-full left-0 top-0">
+                (isNavHidden === false) && <ul className="flex flex-col justify-center items-center bg-gradient-to-b from-gray-900 to-black absolute w-full h-screen left-0 top-0">
                     {renderedMidNavLinks}
                 </ul>
             }

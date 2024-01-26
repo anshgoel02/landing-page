@@ -3,7 +3,7 @@ import myPhoto from "../assets/myPhoto.jpeg";
 
 function Home() {
     return (
-        <section id="home" className="bg-gradient-to-b from-gray-900 to-gray-600 p-8 h-screen w-full justify-center items-center flex">
+        <section id="home" className="bg-gradient-to-b from-gray-900 to-gray-600 p-8 h-full md:h-screen w-full justify-center items-center flex">
             <div className="container mx-auto text-center md:flex justify-center items-center">
                 <div className="md:w-2/3">
                     <img

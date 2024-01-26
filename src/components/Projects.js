@@ -43,7 +43,7 @@ function Projects() {
     })
 
     return (
-        <section id="projects" className="bg-gradient-to-b from-gray-600 to-gray-900 p-8 h-screen flex items-center">
+        <section id="projects" className="bg-gradient-to-b from-gray-600 to-gray-900 p-8 h-full md:h-screen flex items-center">
             <div className="container mx-auto w-5/6">
                 <h2 className="text-white text-5xl font-semibold mb-8 pb-2 inline-block border-b-4 border-gray-400">
                     Projects
