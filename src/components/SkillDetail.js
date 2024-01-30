@@ -1,18 +1,37 @@
 import React from "react";
 import { IoIosClose } from "react-icons/io";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
+import { Link as NavLink } from "react-router-dom";
 
 
 const SkillDetail = ({ skill, onClose }) => {
     const renderedDetails = skill.details.map((detail) => {
         return (
-            <Link to={detail} smooth duration={500} onClick={onClose} offset={-window.innerHeight / 3} className="w-full sm:w-1/2 md:w-1/3 px-4 mb-4">
-                <div className="flex flex-col items-center justify-center cursor-pointer
+            detail.url
+                ?
+                <div className="w-full sm:w-1/2 md:w-1/3 px-4 mb-4" onClick={onClose}>
+                    <a
+                        key={detail.title}
+                        href={detail.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex flex-col items-center justify-center cursor-pointer
+            m-4 p-4 h-40 text-4xl text-white rounded-md shadow-md bg-gradient-to-b from-gray-600 to-gray-500
+            hover:bg-blue-100 hover:text-black hover:scale-105 duration-200"
+                    >
+                        {detail.title}
+                    </a>
+                </div>
+                :
+                <ScrollLink to={detail} smooth duration={500} onClick={onClose} offset={-window.innerHeight / 3} className="w-full sm:w-1/2 md:w-1/3 px-4 mb-4">
+                    <div className="flex flex-col items-center justify-center cursor-pointer
             m-4 p-4 h-40 text-4xl text-white rounded-md shadow-md bg-gradient-to-b from-gray-600 to-gray-500
             hover:bg-blue-100 hover:text-black hover:scale-105 duration-200">
-                    {detail}
-                </div>
-            </Link>
+
+                        {detail}
+                    </div>
+                </ScrollLink>
+
         )
     })
 
