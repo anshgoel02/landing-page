@@ -60,10 +60,10 @@ const Skills = () => {
     return (
         <section id="skills" className="bg-gradient-to-b from-gray-600 to-gray-900 h-full md:h-screen flex items-center">
             <div className="container mx-auto w-5/6">
-                <h2 className="text-5xl text-white font-semibold mx-4 mb-8 pb-2 border-b-4 border-gray-400 inline-block">
+                <h2 className="text-5xl text-white font-semibold m-8 mb-8 pb-2 border-b-4 border-gray-400 inline-block">
                     Skills
                 </h2>
-                <div className="flex flex-wrap -mx-4">
+                <div className="flex flex-wrap items-center justify-center">
                     {renderedSkills}
                 </div>
             </div>

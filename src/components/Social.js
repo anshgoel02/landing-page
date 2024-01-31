@@ -34,9 +34,9 @@ const Social = () => {
     })
 
     return (
-        <section id="social" className="bg-gradient-to-b from-gray-900 to-gray-600 h-full md:h-screen flex flex-col justify-center">
+        <section id="social" className="bg-gradient-to-b from-gray-900 to-gray-600 h-full md:h-screen flex items-center">
             <div className="container mx-auto w-5/6">
-                <h2 className="text-5xl font-semibold m-8 mb-8 text-white border-b-4 border-gray-400 pb-2 inline-block">Social Links</h2>
+                <h2 className="text-white text-5xl font-semibold m-8 mb-8 border-b-4 border-gray-400 pb-2 inline-block">Social Links</h2>
                 <div className="flex flex-wrap items-center justify-center">
                     {renderedLinks}
                 </div>
