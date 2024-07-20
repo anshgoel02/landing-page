@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { GrContact } from "react-icons/gr";
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -33,61 +34,66 @@ const Contact = () => {
                     Contact Me
                 </h2>
 
-                <form onSubmit={handleSubmit} className="mx-8">
-                    <div className="mb-4">
-                        <label htmlFor="name" className="block text-white font-semibold mb-2">
-                            Name:
-                        </label>
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            value={formData.name}
-                            onChange={handleChange}
-                            className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
-                            placeholder="Enter your name"
-                            required
-                        />
-                    </div>
+                <div className="mx-8 flex">
+                    <form onSubmit={handleSubmit} className="w-full md:w-2/3 pr-8">
+                        <div className="mb-4">
+                            <label htmlFor="name" className="block text-white font-semibold mb-2">
+                                Name:
+                            </label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                value={formData.name}
+                                onChange={handleChange}
+                                className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                                placeholder="Enter your name"
+                                required
+                            />
+                        </div>
 
-                    <div className="mb-4">
-                        <label htmlFor="email" className="block text-white font-semibold mb-2">
-                            Email:
-                        </label>
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            value={formData.email}
-                            onChange={handleChange}
-                            className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
-                            placeholder="Enter your email"
-                            required
-                        />
-                    </div>
+                        <div className="mb-4">
+                            <label htmlFor="email" className="block text-white font-semibold mb-2">
+                                Email:
+                            </label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                value={formData.email}
+                                onChange={handleChange}
+                                className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                                placeholder="Enter your email"
+                                required
+                            />
+                        </div>
 
-                    <div className="mb-4">
-                        <label htmlFor="message" className="block text-white font-semibold mb-2">
-                            Message:
-                        </label>
-                        <textarea
-                            id="message"
-                            name="message"
-                            value={formData.message}
-                            onChange={handleChange}
-                            rows="4"
-                            className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
-                            placeholder="Enter your message"
-                            required
-                        />
-                    </div>
+                        <div className="mb-4">
+                            <label htmlFor="message" className="block text-white font-semibold mb-2">
+                                Message:
+                            </label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                value={formData.message}
+                                onChange={handleChange}
+                                rows="4"
+                                className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                                placeholder="Enter your message"
+                                required
+                            />
+                        </div>
 
-                    <button
-                        type="submit"
-                        className="mt-4 text-white bg-gray-500 py-2 px-4 rounded-md hover:scale-105 duration-200 shadow-md shadow-gray-700">
-                        Submit
-                    </button>
-                </form>
+                        <button
+                            type="submit"
+                            className="mt-4 text-white bg-gray-500 py-2 px-4 rounded-md hover:scale-105 duration-200 shadow-md shadow-gray-700">
+                            Submit
+                        </button>
+                    </form>
+                    <div className="w-1/3 text-white hidden md:flex justify-center items-center">
+                        <GrContact size={300} />
+                    </div>
+                </div>
             </div>
         </section>
     );
