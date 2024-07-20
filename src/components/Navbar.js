@@ -15,7 +15,7 @@ function Navbar() {
         { id: 2, name: "Projects", goto: "projects" },
         { id: 3, name: "Social", goto: "social" },
         { id: 4, name: "Skills", goto: "skills" },
-        { id: 5, name: "Contact", goto: "contact" }
+        // { id: 5, name: "Contact", goto: "contact" }
     ];
 
     const renderedLinks = links.map((link) => {
@@ -41,12 +41,17 @@ function Navbar() {
 
 
     return (
-        <nav className="bg-gray-900 p-3 flex justify-between items-center sticky top-0">
+        <nav className="bg-gray-900 p-3 flex justify-between items-center sticky top-0 z-99">
             <div className="z-10 cursor-pointer">
                 <Link to="home" smooth duration={500} className="logo text-white text-5xl">Ansh</Link>
             </div>
             <ul className="hidden md:flex">
                 {renderedLinks}
+                <li className="px-4 py-1 cursor-pointer text-white font-medium hover:bg-gray-800 hover:rounded-md hover:scale-105 duration-200">
+                    <a href="mailto:goelansh164@gmail.com" smooth duration={500}>
+                        Contact
+                    </a>
+                </li>
             </ul>
             <div onClick={handleClick} className="md:hidden z-10">
                 {
@@ -58,6 +63,11 @@ function Navbar() {
             {
                 (isNavHidden === false) && <ul className="flex flex-col justify-center items-center bg-gradient-to-b from-gray-900 to-black absolute w-full h-screen left-0 top-0">
                     {renderedMidNavLinks}
+                    <li className="px-4 py-4 text-white cursor-pointer text-4xl hover:bg-gray-900 hover:rounded-md hover:scale-105 duration-200">
+                        <a href="mailto:goelansh164@gmail.com" smooth duration={500} onClick={handleClick} offset={-window.innerHeight / 10}>
+                            Contact
+                        </a>
+                    </li>
                 </ul>
             }
         </nav>

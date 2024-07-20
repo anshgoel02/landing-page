@@ -12,20 +12,20 @@ const Skills = () => {
             icon: <TbBrandCpp size={48} />,
             details: [
                 {
-                    title: "519 Questions on LeetCode",
+                    title: "750+ Questions on LeetCode",
                     url: "https://leetcode.com/goelansh164/"
                 },
                 {
-                    title: "234 Questions on GFG",
+                    title: "250+ Questions on GFG",
                     url: "https://auth.geeksforgeeks.org/user/goelansh164/practice"
                 },
                 {
-                    title: "⭐️⭐️⭐️ Coder on CodeChef (Max 1741)",
+                    title: "⭐️⭐️⭐️ Coder on CodeChef (Max 1787)",
                     url: "https://www.codechef.com/users/anshgoel_02"
                 },
                 {
-                    title: "257 Questions on CodeStudio",
-                    url: "https://www.codingninjas.com/studio/home"
+                    title: "250+ Questions on CodeStudio",
+                    url: "https://www.naukri.com/code360/profile/Ansh_Goel"
                 }
             ]
         },
