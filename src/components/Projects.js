@@ -1,6 +1,8 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import ChargeHub from "../assets/ChargeHub.png";
+import ChatFlareChat from "../assets/ChatFlareChat.png";
+import Portfolio from "../assets/Portfolio.png";
 
 function Projects() {
     const projects = [
@@ -23,14 +25,14 @@ function Projects() {
             description: "Real-time chatting app",
             details: "Created using MERN Stack, Tailwind CSS Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, at dolorum. Ullam, provident consectetur beatae illum quos, autem impedit nemo deleniti dolorum eos sequi. Quaerat cumque deleniti ad soluta doloribus exercitationem quod dignissimos necessitatibus at molestias officia quos illo, totam aspernatur quo ullam dicta veritatis officiis quae quidem optio consequuntur?",
             githubLink: "https://github.com/anshgoel02/ChatFlare",
-            imageUrl: ChargeHub
+            imageUrl: ChatFlareChat
         },
         {
             title: "Portfolio",
             description: "My portfolio",
             details: "Created using React.js, Tailwind CSS Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, at dolorum. Ullam, provident consectetur beatae illum quos, autem impedit nemo deleniti dolorum eos sequi. Quaerat cumque deleniti ad soluta doloribus exercitationem quod dignissimos necessitatibus at molestias officia quos illo, totam aspernatur quo ullam dicta veritatis officiis quae quidem optio consequuntur?",
             githubLink: "https://github.com/anshgoel02/landing-page",
-            imageUrl: ChargeHub
+            imageUrl: Portfolio
         }
     ];
 

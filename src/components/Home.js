@@ -9,12 +9,12 @@ function Home() {
                     <img
                         src={myPhoto}
                         alt="Your Profile"
-                        className="rounded-2xl mx-auto mb-8 w-3/4"
+                        className="rounded-2xl mx-auto mb-8 sm:w-3/4 md:w-full"
                     />
                 </div>
                 <div className="mx-auto p-4">
                     <h2 className="text-7xl font-bold mb-4 text-white">Welcome to My Portfolio</h2>
-                    <p className="text-lg text-gray-300 mb-8">
+                    <p className="text-lg text-gray-300 mb-8 p-4">
                         Hi, I'm Ansh Goel, a tech enthusiast currently in my 4th year of studying Computer Engineering at Delhi Technological University. Outside of my academic pursuits, I enjoy playing the guitar and watching football.
                     </p>
                 </div>
