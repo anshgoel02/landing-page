@@ -10,7 +10,18 @@ function ProjectDetails({ project, onClose }) {
                         alt={project.title}
                         className="w-full object-cover rounded-md mb-4"
                     />
-                    <div className="flex flex-row justify-evenly items-center">
+                    <div className="flex flex-row justify-around items-center">
+                        {
+                            project.link &&
+                            <a
+                                href={project.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-white mx-4 mt-4 shadow-md shadow-gray-700 py-2 px-4 rounded-md hover:scale-105 duration-200 bg-gray-500"
+                            >
+                                {project.title} Link
+                            </a>
+                        }
                         <a
                             href={project.githubLink}
                             target="_blank"
@@ -28,11 +39,6 @@ function ProjectDetails({ project, onClose }) {
                     <h3 className="text-2xl mb-2 text-semibold inline-block border-b-4 border-gray-500">
                         {project.title}
                     </h3>
-                    <h4 className="text-lg pb-1 text-semibold text-gray-100">Description</h4>
-                    <p className="text-gray-300 mb-2">
-                        {project.description}
-                    </p>
-                    <h4 className="text-lg pb-1 text-semibold text-gray-100">Details</h4>
                     <p className="text-gray-300 mb-4">
                         {project.details}
                     </p>
