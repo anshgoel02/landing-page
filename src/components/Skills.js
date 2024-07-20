@@ -1,6 +1,6 @@
 import React from "react";
 import { TbBrandCpp } from "react-icons/tb";
-import { GiArtificialIntelligence } from "react-icons/gi";
+// import { GiArtificialIntelligence } from "react-icons/gi";
 import { TbBrandJavascript } from "react-icons/tb";
 import { ImBooks } from "react-icons/im";
 import SkillCard from "./SkillCard";

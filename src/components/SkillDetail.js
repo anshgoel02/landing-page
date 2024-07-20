@@ -1,7 +1,7 @@
 import React from "react";
 import { IoIosClose } from "react-icons/io";
 import { Link as ScrollLink } from "react-scroll";
-import { Link as NavLink } from "react-router-dom";
+// import { Link as NavLink } from "react-router-dom";
 
 
 const SkillDetail = ({ skill, onClose }) => {
