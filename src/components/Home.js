@@ -15,7 +15,7 @@ function Home() {
                 <div className="mx-auto p-4">
                     <h2 className="text-7xl font-bold mb-4 text-white">Welcome to My Portfolio</h2>
                     <p className="text-lg text-gray-300 mb-8">
-                        Hello, I'm Ansh Goel. I'm a 3rd Year Computer Engineering student at Delhi Technological University. Here's a brief introduction about myself.
+                        Hi, I'm Ansh Goel, a tech enthusiast currently in my 4th year of studying Computer Engineering at Delhi Technological University. Outside of my academic pursuits, I enjoy playing the guitar and watching football.
                     </p>
                 </div>
             </div>
