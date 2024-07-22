@@ -90,7 +90,7 @@ function Projects() {
         },
         {
             title: "Portfolio",
-            link: "https://ansh-goel-landing-page.netlify.app",
+            link: "https://ansh-goel.netlify.app",
             details: (
                 <div className="pe-2 max-w-4xl mx-auto">
                     <p className="mb-4">
