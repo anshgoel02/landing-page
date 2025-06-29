@@ -11,7 +11,7 @@ const Social = () => {
         { name: "GitHub", url: "https://github.com/anshgoel02", icon: <FaGithub /> },
         { name: "LeetCode", url: "https://leetcode.com/goelansh164/", icon: <SiLeetcode /> },
         { name: "CodeChef", url: "https://www.codechef.com/users/anshgoel_02", icon: <SiCodechef /> },
-        { name: "Résumé", url: "https://drive.google.com/file/d/1Ck72WUkLbAfpLzFXzc--DU36pz7URMTu/view?usp=sharing", icon: <ImProfile /> }
+        { name: "Résumé", url: "https://drive.google.com/file/d/1Dr9l_vPRq74NLu445ozsK-dEX1iaksk5/view?usp=sharing", icon: <ImProfile /> }
     ];
 
     const renderedLinks = links.map((link, index) => {
